@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent:#ff3400;
+    --color-heading:#918ca4;
+    --color-body  :#1b0760;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html{
+    /*62.5% of 16px = 10px */
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: var(--color-body);
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+
+
+/* Typigraphy */
+ 
+.summary {
+    align-items: right;
+    padding-top: 2rem;
+
+}
+.summary h1{
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Fira-sans, Arial, Helvetica, sans-serif;
+}
+.summary img{
+    border-radius: 4rem;
+    float: right;
+    max-width: 70%;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin-top: 6rem;
+    
+}
+.summary .details{
+    font-size: 2rem;
+    display: inline-block;
+    width: 40%;
+    font-size: 30px;
+}
+
+li{
+    list-style: none;
+}
+
+/* BUTTON */
+
+.btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    margin: 1rem 0;
+    border: 1px solid var(--color-secondary);
+    margin-right: 1rem;
+    
+}
+
+.btn :hover {
+    color: var(--color-accent);
+}
+  
+        
+
+@media screen and (max-width:770px) {
+    body{
+        align-items: center;
+        font-size: 30px;
+    }
+    .cap{
+        display: block;
+    }
+    .summary h1{
+        font-size: 5rem;
+        font-weight: bolder;
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        display: inline;
+    }
+
+    .summary img{
+        float: left;
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+    }
+    .summary .details{
+        font-size: 1rem;
+        display: inline;
+        width: 40%;
+        font-size: 30px;
+    }
+
+    .btn-bt{
+        margin-top: 40rem;
+    }
+}
+
+.about {
+    background: linear-gradient(133deg, rgb(12, 91, 244), rgb(111, 12, 244) 68%);
+    color: #fff;
+    display: flex;  
+}
+.about li{
+font-weight: lighter;
+line-height: 2;
+}
+
+.skills{
+    width: 50%;
+    
+}
+.study h3{
+    display: inline-block;
+    font-size: 5rem;
+    text-align: left;
+    font-size: 30px; 
+    line-height: 1;
+}
+
+
+.study{
+    width: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.study li{
+    line-height: 2;
+}
+
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+    height: auto;
+    line-height: 2;
+    border-radius: 4rem;
+  }
+  .skills {
+    text-align: left; /* Right-align text */
+    padding-top: 0.1rem; /* Add top padding */
+    padding-bottom: 0.1rem; /* Add bottom padding */
+    color: white; /* White text color */
+    font-style: oblique;
+    font-weight: 700;
+  }
+   
+  .html {width: 90%;  background-color: #04AA6D;}
+  .css {width: 80%; background-color: #2196F3;} 
+  .js {width: 40%; background-color: #f44336;}
+  .excel {width: 90%; background-color: #808080;} 
+  .bi {width: 70%; background-color: #f4f;} 
+  .sql {width: 50%; background-color: #000;} 
+
+.exp{
+    background: #18112F;
+    margin-top: 0;
+    color: white;
+    
+}
+.exp li{
+    list-style: circle;
+    
+}
+.details span {
+    color: var(--color-body);
+    font-weight: bolder;
+    font-size: 10rem;
+}
+    
+    @media screen and (max-width: 770px)  {
+        .about{
+            display:block;
+            float:center;
+
+}
+        .about h3{
+            font: size 3.5rem;
+            
+        }
+                .skills{
+            text-align: center;
+            width: 90%;
+            border-bottom: 1px dotted grey;
+        }
+        
+  .html {width: 80%;  background-color: #04AA6D;}
+  .css {width: 70%; background-color: #2196F3;} 
+  .js {width: 30%; background-color: #f44336;}
+  .excel {width: 80%; background-color: #808080;} 
+  .bi {width: 60%; background-color: #f4f;} 
+  .sql {width: 40%; background-color: #000;} 
+
+  .study{
+    display: inline;
+    align-items: center;
+    
+}
+.study li{
+    width: 50%;
+    display: inline;
+    font-size: 2rem;
+    text-align: left;
+
+}
+.study h3{
+    text-align: center;
+
+}
+.exp h3{
+    text-align: center;
+
+}
+.exp{
+    align-items: center;
+}
+
+
+    }
+      
+
+span {
+    color: var(--color-secondary);
+    font-weight: bolder;
+    font-size: rem;
+}
+.gallery {
+    max-width: 100%;
+    margin: 0 auto;
+    column-count: 3;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .25);
+
+}
+.gallery__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    background:#fff ;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.navbar ul{
+    float: right;
+    color: #5A7366;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    
+ }
+ .navbar li{
+    display: inline;
+    margin-left: 5px;
+    list-style-type: none;
+ }
+  
+
+ @media screen and (max-width:770px) {
+    .meet h3 {
+        text-align: center;
+    }
+    .gallery {
+        margin: 0 auto;
+        column-count: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-bar li{
+        text-align: center;
+    }
+    footer{
+        font-size: 10px;
+    }
+     
+ }
